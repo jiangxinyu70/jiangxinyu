@@ -1,27 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蒋欣宇 - 个人介绍</title>
     <link rel="stylesheet" href="style.css">
-    <title>Introduction</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <p>My name is [Your Name], and this is a brief introduction about me.</p>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>[Write about yourself]</p>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">XY</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>蒋欣宇</h1>
+            <p class="subtitle">全栈开发工程师 | 创意编码者</p>
+            <p class="description">欢迎来到我的个人网站！这是我的专业简历和作品展示。</p>
+            <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">了解更多</button>
+        </div>
     </section>
-    <section>
-        <h2>Projects</h2>
-        <p>[List some of your projects]</p>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <p>我是一名热情的全栈开发工程师，具有丰富的Web开发经验。我喜欢通过代码解决实际问题，并始终追求代码质量和用户体验的完美平衡。</p>
+            <p>我的专长包括前端开发、后端API设计和数据库优化。我致力于学习新技术，不断提升自己的技能水平。</p>
+        </div>
     </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>我的技能</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>前端开发</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <p>HTML, CSS, JavaScript, React, Vue</p>
+                </div>
+                <div class="skill-item">
+                    <h3>后端开发</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <p>Node.js, Python, Express, Django</p>
+                </div>
+                <div class="skill-item">
+                    <h3>数据库</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="skill-item">
+                    <h3>开发工具</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <p>Git, Docker, VS Code, Linux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>我的项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>项目 1</h3>
+                    <p>这是一个创新的Web应用项目，展示了现代前端技术的应用。</p>
+                    <a href="#" class="project-link">查看更多 →</a>
+                </div>
+                <div class="project-card">
+                    <h3>项目 2</h3>
+                    <p>一个全栈应用，整合了React前端和Node.js后端，功能完整。</p>
+                    <a href="#" class="project-link">查看更多 →</a>
+                </div>
+                <div class="project-card">
+                    <h3>项目 3</h3>
+                    <p>数据可视化项目，使用高级JavaScript库展示数据分析结果。</p>
+                    <a href="#" class="project-link">查看更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <p>如果你有任何问题或合作机会，欢迎与我联系！</p>
+            <div class="contact-links">
+                <a href="mailto:jiangxinyu70@gmail.com" class="contact-btn">📧 发送邮件</a>
+                <a href="https://github.com/jiangxinyu70" class="contact-btn">🐙 GitHub</a>
+                <a href="https://linkedin.com" class="contact-btn">💼 LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
     <footer>
-        <p>Contact me at: [your email]</p>
+        <p>&copy; 2026 蒋欣宇. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
